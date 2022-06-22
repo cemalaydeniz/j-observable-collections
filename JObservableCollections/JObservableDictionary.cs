@@ -103,11 +103,7 @@ namespace JObservableCollections
             set
             {
                 bool exist = TryGetValue(key, out TValue? oldValue);
-                int index = 0;
-                if (exist)
-                {
-                    index = FindIndexOf(key);
-                }
+                int index = exist ? FindIndexOf(key) : 0;
 
                 base[key] = value;
 
@@ -137,10 +133,10 @@ namespace JObservableCollections
         public new bool Remove(TKey key, [MaybeNullWhen(false)] out TValue value)
         {
             int index = FindIndexOf(key);
-
+            
             bool result = base.Remove(key, out value);
 
-            if (result && value != null)
+            if (result)
             {
                 CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, new KeyValuePair<TKey, TValue>(key, value), index));
             }
@@ -152,11 +148,7 @@ namespace JObservableCollections
         public new bool Remove(TKey key)
         {
             bool exist = TryGetValue(key, out TValue? value);
-            int index = 0;
-            if (exist)
-            {
-                index = FindIndexOf(key);
-            }
+            int index = exist ? FindIndexOf(key) : 0;
 
             bool result = base.Remove(key);
 

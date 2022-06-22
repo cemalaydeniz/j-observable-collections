@@ -115,7 +115,11 @@ namespace JObservableCollections
         public new int RemoveWhere(Predicate<T> match)
         {
             int result = base.RemoveWhere(match);
-            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
+
+            if (result > 0)
+            {
+                CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
+            }
 
             return result;
         }

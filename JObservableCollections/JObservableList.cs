@@ -99,6 +99,7 @@ namespace JObservableCollections
         public new bool Remove(T item)
         {
             int index = FindIndexOf(item);
+
             bool result = base.Remove(item);
 
             if (result)
