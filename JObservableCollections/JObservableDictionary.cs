@@ -7,9 +7,9 @@ using System.Runtime.Serialization;
 namespace JObservableCollections
 {
     /// <summary>
-    /// The observable version of <see cref="System.Collections.Generic.Dictionary{TKey, TValue}"/>.
+    /// The observable version of <see cref="System.Collections.Generic.Dictionary{TKey, TValue}"/>.<para/>
     /// To be able to get notified when a property of a <see cref="TValue"/> in the <see cref="JObservableCollections.JObservableDictionary{TKey, TValue}"/> changes, the <see cref="TValue"/> must either
-    /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.
+    /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.<para/>
     /// If the <see cref="TValue"/> implements <see cref="System.ComponentModel.INotifyPropertyChanged"/> then it should raise the <see cref="System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event when a property of <see cref="TValue"/> changes.
     /// If the <see cref="TValue"/> inherits from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of <see cref="TValue"/> changes.
     /// </summary>

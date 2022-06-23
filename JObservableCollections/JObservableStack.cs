@@ -6,9 +6,9 @@ using System.Diagnostics.CodeAnalysis;
 namespace JObservableCollections
 {
     /// <summary>
-    /// The observable version of <see cref="System.Collections.Generic.Stack{T}"/>.
+    /// The observable version of <see cref="System.Collections.Generic.Stack{T}"/>.<para/>
     /// To be able to get notified when a property of an element in the <see cref="JObservableCollections.JObservableStack{T}"/> changes, the element must either
-    /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.
+    /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.<para/>
     /// If the elements implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> then it should raise the <see cref="System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event when a property of the elements changes.
     /// If the elements inherit from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of the elements changes.
     /// </summary>

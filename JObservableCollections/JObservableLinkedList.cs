@@ -6,15 +6,15 @@ using System.Runtime.Serialization;
 namespace JObservableCollections
 {
     /// <summary>
-    /// The observable version of <see cref="System.Collections.Generic.LinkedList{T}"/>.
+    /// The observable version of <see cref="System.Collections.Generic.LinkedList{T}"/>.<para/>
     /// To be able to get notified when a property of <see cref="System.Collections.Generic.LinkedListNode{T}.Value"/> in the <see cref="JObservableCollections.JObservableLinkedList{T}"/> changes, the <see cref="System.Collections.Generic.LinkedListNode{T}.Value"/> must either 
-    /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.
+    /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.<para/>
     /// If the <see cref="System.Collections.Generic.LinkedListNode{T}.Value"/> implements <see cref="System.ComponentModel.INotifyPropertyChanged"/> then it should raise the <see cref="System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event when a property of <see cref="System.Collections.Generic.LinkedListNode{T}.Value"/> changes.
     /// If the <see cref="System.Collections.Generic.LinkedListNode{T}.Value"/> inherits from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of <see cref="System.Collections.Generic.LinkedListNode{T}.Value"/> changes.
     /// </summary>
     /// <remarks>
-    /// This data structure also includes accessing nodes by an index, whose O(n) = n.
-    /// When you need to replace a value inside of a node, use <see cref="Replace(LinkedListNode{T}, T)"/>, whose O(n) is 1, or <see cref="Replace(int, T)"/>, whose O(n) is n, in order to get notified.
+    /// This data structure also includes accessing nodes by an index, whose O(n) = n.<para/>
+    /// When you need to replace a value inside of a node, use <see cref="Replace(LinkedListNode{T}, T)"/>, whose O(n) is 1, or <see cref="Replace(int, T)"/>, whose O(n) is n, in order to get notified.<para/>
     /// Use the linked list and the values directly to get notified. Example XAML code:
     /// <code>
     /// &lt;ListView ItemsSource="{Binding MyLinkedList}"&gt;
