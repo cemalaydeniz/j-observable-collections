@@ -64,7 +64,7 @@ namespace JObservableCollections
         public new void Add(T item)
         {
             base.Add(item);
-            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item));
+            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item, Count - 1));
         }
 
         /// <inheritdoc cref="System.Collections.Generic.List{T}.AddRange(IEnumerable{T})"/>

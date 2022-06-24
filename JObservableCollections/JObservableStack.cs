@@ -49,7 +49,7 @@ namespace JObservableCollections
         public new T Pop()
         {
             T item = base.Pop();
-            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, item, Count));
+            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, item, 0));
 
             return item;
         }
@@ -58,7 +58,7 @@ namespace JObservableCollections
         public new void Push(T item)
         {
             base.Push(item);
-            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item));
+            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item, 0));
         }
 
         /// <inheritdoc cref="System.Collections.Generic.Stack{T}.TryPop(out T)"/>
@@ -68,7 +68,7 @@ namespace JObservableCollections
 
             if (boolResult)
             {
-                CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, result, Count));
+                CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, result, 0));
             }
 
             return boolResult;

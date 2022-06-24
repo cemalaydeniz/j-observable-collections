@@ -58,7 +58,7 @@ namespace JObservableCollections
         public new void Enqueue(T item)
         {
             base.Enqueue(item);
-            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item));
+            CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item, Count - 1));
         }
 
         /// <inheritdoc cref="System.Collections.Generic.Queue{T}.TryDequeue(out T)"/>
