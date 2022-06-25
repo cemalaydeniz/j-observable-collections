@@ -101,7 +101,7 @@ namespace JObservableCollections.Paginated
                     RefreshCollection();
                 }
             }
-            else if (e.Action == NotifyCollectionChangedAction.Move || e.Action == NotifyCollectionChangedAction.Replace)
+            else
             {
                 if (e.NewItems != null)
                 {
