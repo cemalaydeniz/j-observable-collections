@@ -35,7 +35,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>();
@@ -46,7 +46,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(IDictionary{TKey, TValue})"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, IDictionary<TKey, TValue> dictionary) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(dictionary);
@@ -57,7 +57,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(IEnumerable{KeyValuePair{TKey, TValue}})"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(collection);
@@ -68,7 +68,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(IEqualityComparer{TKey}?)"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, IEqualityComparer<TKey>? comparer) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(comparer);
@@ -79,7 +79,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(int)"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, int capacity) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(capacity);
@@ -90,7 +90,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(IDictionary{TKey, TValue}, IEqualityComparer{TKey}?)"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey>? comparer) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(dictionary, comparer);
@@ -101,7 +101,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(IEnumerable{KeyValuePair{TKey, TValue}}, IEqualityComparer{TKey}?)"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, IEnumerable<KeyValuePair<TKey, TValue>> collection, IEqualityComparer<TKey>? comparer) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(collection, comparer);
@@ -112,7 +112,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(int, IEqualityComparer{TKey}?)"/>
         /// <param name="pageSize">The initial size of the pages in the dictionary.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableDictionary(int pageSize, int capacity, IEqualityComparer<TKey>? comparer) : base(pageSize)
         {
             FullDictionary = new JObservableDictionary<TKey, TValue>(capacity, comparer);

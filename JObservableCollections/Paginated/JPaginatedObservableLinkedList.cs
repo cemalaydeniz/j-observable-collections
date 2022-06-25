@@ -39,7 +39,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.LinkedList{T}.LinkedList"/>
         /// <param name="pageSize">The initial size of the pages in the linked list.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableLinkedList(int pageSize) : base(pageSize)
         {
             FullLinkedList = new JObservableLinkedList<T>();
@@ -50,7 +50,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.LinkedList{T}.LinkedList(IEnumerable{T})"/>
         /// <param name="pageSize">The initial size of the pages in the linked list.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableLinkedList(int pageSize, IEnumerable<T> collection) : base(pageSize)
         {
             FullLinkedList = new JObservableLinkedList<T>(collection);

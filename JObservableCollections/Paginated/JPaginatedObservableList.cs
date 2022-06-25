@@ -37,7 +37,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.List{T}.List"/>
         /// <param name="pageSize">The initial size of the pages in the list.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableList(int pageSize) : base(pageSize)
         {
             FullList = new JObservableList<T>();
@@ -48,7 +48,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.List{T}.List(IEnumerable{T})"/>
         /// <param name="pageSize">The initial size of the pages in the list.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableList(int pageSize, IEnumerable<T> collection) : base(pageSize)
         {
             FullList = new JObservableList<T>(collection);
@@ -59,7 +59,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.List{T}.List(int)"/>
         /// <param name="pageSize">The initial size of the pages in the list.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableList(int pageSize, int capacity) : base(pageSize)
         {
             FullList = new JObservableList<T>(capacity);

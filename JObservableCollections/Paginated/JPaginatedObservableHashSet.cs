@@ -34,7 +34,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.HashSet{T}.HashSet"/>
         /// <param name="pageSize">The initial size of the pages in the hash set.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableHashSet(int pageSize) : base(pageSize)
         {
             FullHashSet = new JObservableHashSet<T>();
@@ -45,7 +45,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.HashSet{T}.HashSet(IEnumerable{T})"/>
         /// <param name="pageSize">The initial size of the pages in the hash set.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableHashSet(int pageSize, IEnumerable<T> collection) : base(pageSize)
         {
             FullHashSet = new JObservableHashSet<T>(collection);
@@ -56,7 +56,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.HashSet{T}.HashSet(IEqualityComparer{T}?)"/>
         /// <param name="pageSize">The initial size of the pages in the hash set.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableHashSet(int pageSize, IEqualityComparer<T>? comparer) : base(pageSize)
         {
             FullHashSet = new JObservableHashSet<T>(comparer);
@@ -67,7 +67,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.HashSet{T}.HashSet(int)"/>
         /// <param name="pageSize">The initial size of the pages in the hash set.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableHashSet(int pageSize, int capacity) : base(pageSize)
         {
             FullHashSet = new JObservableHashSet<T>(capacity);
@@ -78,7 +78,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.HashSet{T}.HashSet(IEnumerable{T}, IEqualityComparer{T}?)"/>
         /// <param name="pageSize">The initial size of the pages in the hash set.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableHashSet(int pageSize, IEnumerable<T> collection, IEqualityComparer<T>? comparer) : base(pageSize)
         {
             FullHashSet = new JObservableHashSet<T>(collection, comparer);
@@ -89,7 +89,7 @@
 
         /// <inheritdoc cref="System.Collections.Generic.HashSet{T}.HashSet(int, IEqualityComparer{T}?)"/>
         /// <param name="pageSize">The initial size of the pages in the hash set.</param>
-        /// <exception cref="ArgumentException">pageSize is 0 or negative.</exception>
+        /// <exception cref="System.ArgumentException">pageSize is 0 or negative.</exception>
         public JPaginatedObservableHashSet(int pageSize, int capacity, IEqualityComparer<T>? comparer) : base(pageSize)
         {
             FullHashSet = new JObservableHashSet<T>(capacity, comparer);
