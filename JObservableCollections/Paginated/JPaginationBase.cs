@@ -8,6 +8,9 @@ namespace JObservableCollections.Paginated
     /// <summary>
     /// Adds the pagination feature to a collection. Before using this, make sure <see cref="SetFullCollection(IEnumerable{T})"/> method is called.
     /// </summary>
+    /// <remarks>
+    /// The reference of the full collection must be sent via <see cref="SetFullCollection(IEnumerable{T})"/> method before using the pagination feature.
+    /// </remarks>
     /// <typeparam name="T">The type of elements in the paginated collection. The type must be same as the type of the object that is sent via <see cref="INotifyCollectionChanged.CollectionChanged"/> event.
     /// See examples: <see cref="JPaginatedObservableList{T}"/> and <see cref="JPaginatedObservableDictionary{T}"/>.
     /// </typeparam>

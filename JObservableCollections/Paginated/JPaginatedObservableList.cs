@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// The paginated version of <see cref="JObservableCollections.JObservableList{T}"/>.<para/>
-    /// To be able to get notified when a property of an element in the <see cref="JObservableCollections.JObservableList{T}"/> changes, the element must either 
+    /// To be able to get notified when a property of an element in the <see cref="JObservableCollections.Paginated.JPaginatedObservableList{T}"/> changes, the element must either 
     /// implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> or inherit from <see cref="JObservableCollections.Helper.JObservableItem"/>.<para/>
     /// If the elements implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> then it should raise the <see cref="System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event when a property of the elements changes.
     /// If the elements inherit from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of the elements changes.
@@ -19,10 +19,10 @@
     ///     &lt;/ListView.View&gt;
     /// &lt;/ListView&gt;
     /// </code>
-    /// <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/> and <see cref="JObservableCollections.Paginated.JPaginationBase{T}.NumofPages"/> properties are set automatic when something changes in the list. They can be used directly.
+    /// <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/> and <see cref="JObservableCollections.Paginated.JPaginationBase{T}.NumofPages"/> properties are set automaticly when something changes in the list. They can be used directly.
     /// In order to change the <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/>, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.ChangePage(int)"/> method and in order to set the
     /// <see cref="JObservableCollections.Paginated.JPaginationBase{T}.PageSize"/>, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.SetPageSize(int)"/> method.<para/> 
-    /// If an index is needed to access or change an element, the absolute version of the index must be used. E.g. using 0th index on 2nd page results in changing the 0th element in the <see cref="FullList"/> property. In order to use the
+    /// If an index is needed to access or change an element, the absolute version of the index must be used. E.g. using 5th index on the 2nd page results in changing the 5th element from the beginning in the <see cref="FullList"/> property. In order to use the
     /// absolute index, calculate the absolute index manually or use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.GetAbsoluteIndex(int)"/> method.
     /// The method takes the <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/> property into account.
     /// </remarks>
