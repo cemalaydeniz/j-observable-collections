@@ -1,4 +1,10 @@
-﻿using System.ComponentModel;
+﻿// Author: Cemal A. Aydeniz 
+// https://github.com/cemalaydeniz
+//
+// Licensed under the MIT. See LICENSE in the project root for license information
+
+
+using System.ComponentModel;
 
 
 namespace JObservableCollections.Helper

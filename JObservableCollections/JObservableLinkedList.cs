@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿// Author: Cemal A. Aydeniz 
+// https://github.com/cemalaydeniz
+//
+// Licensed under the MIT. See LICENSE in the project root for license information
+
+
+using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime.Serialization;
 
