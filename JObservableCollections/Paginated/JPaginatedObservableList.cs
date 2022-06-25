@@ -19,9 +19,9 @@
     ///     &lt;/ListView.View&gt;
     /// &lt;/ListView&gt;
     /// </code>
-    /// <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/> and <see cref="JObservableCollections.Paginated.JPaginationBase{T}.NumofPages"/> properties are set automaticly when something changes in the list. They can be used directly.
-    /// In order to change the <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/>, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.ChangePage(int)"/> method and in order to set the
-    /// <see cref="JObservableCollections.Paginated.JPaginationBase{T}.PageSize"/>, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.SetPageSize(int)"/> method.<para/> 
+    /// <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/> and <see cref="JObservableCollections.Paginated.JPaginationBase{T}.NumofPages"/> properties are set automaticly when something changes in the list.
+    /// They both become 0 when there is no element in the list. In order to change the <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/>, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.ChangePage(int)"/> method and
+    /// in order to set the <see cref="JObservableCollections.Paginated.JPaginationBase{T}.PageSize"/>, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.SetPageSize(int)"/> method.<para/> 
     /// If an index is needed to access or change an element, the absolute version of the index must be used. E.g. using 5th index on the 2nd page results in changing the 5th element from the beginning in the <see cref="FullList"/> property. In order to use the
     /// absolute index, calculate the absolute index manually or use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.GetAbsoluteIndex(int)"/> method.
     /// The method takes the <see cref="JObservableCollections.Paginated.JPaginationBase{T}.CurrentPage"/> property into account.
