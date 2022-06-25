@@ -6,13 +6,13 @@ using System.ComponentModel;
 namespace JObservableCollections.Paginated
 {
     /// <summary>
-    /// Adds the pagination feature to a collection. Before using this, make sure <see cref="SetFullCollection(IEnumerable{T})"/> method is called.
+    /// Adds the pagination feature to a collection. The reference of the full collection must be sent via <see cref="SetFullCollection(IEnumerable{T})"/> method before using the pagination feature.
     /// </summary>
     /// <remarks>
-    /// The reference of the full collection must be sent via <see cref="SetFullCollection(IEnumerable{T})"/> method before using the pagination feature.
+    /// <see cref="CurrentPage"/> and <see cref="NumofPages"/> properties become 0 when there is no element inside the collection.
     /// </remarks>
     /// <typeparam name="T">The type of elements in the paginated collection. The type must be same as the type of the object that is sent via <see cref="INotifyCollectionChanged.CollectionChanged"/> event.
-    /// See examples: <see cref="JPaginatedObservableList{T}"/> and <see cref="JPaginatedObservableDictionary{T}"/>.
+    /// See examples: <see cref="JObservableCollections.Paginated.JPaginatedObservableList{T}"/> and <see cref="JObservableCollections.Paginated.JPaginatedObservableDictionary{TKey, TValue}"/>.
     /// </typeparam>
     public abstract class JPaginationBase<T> : INotifyPropertyChanged
     {
