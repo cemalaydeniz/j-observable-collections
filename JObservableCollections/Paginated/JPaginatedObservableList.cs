@@ -8,7 +8,7 @@
     /// If the elements inherit from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of the elements changes.
     /// </summary>
     /// <remarks>
-    /// In order to modify the list, use <see cref="FullList"/> property and in order to get the paginated version of the list, use <see cref="JPaginationBase{T}.PaginatedCollection"/> property. Example XAML code:
+    /// In order to modify the list, use <see cref="FullList"/> property and in order to get the paginated version of the list, use <see cref="JObservableCollections.Paginated.JPaginationBase{T}.PaginatedCollection"/> property. Example XAML code:
     /// <code>
     /// &lt;ListView ItemsSource="{Binding MyList.PaginatedCollection}"&gt;
     ///     &lt;ListView.View&gt;
