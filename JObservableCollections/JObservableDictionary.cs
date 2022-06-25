@@ -83,7 +83,7 @@ namespace JObservableCollections
         }
 
         /// <inheritdoc cref="System.Collections.Generic.Dictionary{TKey, TValue}.Dictionary(SerializationInfo, StreamingContext)"/>
-        protected JObservableDictionary(SerializationInfo info, StreamingContext context)
+        protected JObservableDictionary(SerializationInfo info, StreamingContext context) : base(info, context)
         {
             CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
         }
