@@ -47,7 +47,7 @@ namespace JObservableCollections
         }
 
         /// <inheritdoc cref="System.Collections.Generic.LinkedList{T}.LinkedList(SerializationInfo, StreamingContext)"/>
-        public JObservableLinkedList(SerializationInfo info, StreamingContext context) : base(info, context)
+        protected JObservableLinkedList(SerializationInfo info, StreamingContext context) : base(info, context)
         {
             CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
         }
