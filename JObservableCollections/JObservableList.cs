@@ -4,11 +4,10 @@
 // Licensed under the MIT. See LICENSE in the project root for license information
 
 
-using System.Collections.Generic;
 using System.Collections.Specialized;
 
 
-namespace JObservableCollections
+namespace JUtility.JObservableCollections
 {
     /// <summary>
     /// The observable version of <see cref="System.Collections.Generic.List{T}"/>.<para/>
@@ -17,6 +16,19 @@ namespace JObservableCollections
     /// If the elements implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> then it should raise the <see cref="System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event when a property of the elements changes.
     /// If the elements inherit from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of the elements changes.
     /// </summary>
+    /// <remarks>
+    /// Use the list and its elements to get notified. Example XAML code:
+    /// <code>
+    /// &lt;ListView ItemsSource="{Binding MyList}"&gt;
+    ///     &lt;ListView.View&gt;
+    ///         &lt;GridView&gt;
+    ///             &lt;GridViewColumn DisplayMemberBinding="{Binding MyProperty1}"/&gt;
+    ///             &lt;GridViewColumn DisplayMemberBinding="{Binding MyProperty2}"/&gt;
+    ///         &lt;/GridView&gt;
+    ///     &lt;/ListView.View&gt;
+    /// &lt;/ListView&gt;
+    /// </code>
+    /// </remarks>
     /// <typeparam name="T">The type of elements in the list.</typeparam>
     public class JObservableList<T> : List<T>, INotifyCollectionChanged
     {

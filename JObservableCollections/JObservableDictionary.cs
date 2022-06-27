@@ -4,13 +4,12 @@
 // Licensed under the MIT. See LICENSE in the project root for license information
 
 
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 
 
-namespace JObservableCollections
+namespace JUtility.JObservableCollections
 {
     /// <summary>
     /// The observable version of <see cref="System.Collections.Generic.Dictionary{TKey, TValue}"/>.<para/>

@@ -4,11 +4,10 @@
 // Licensed under the MIT. See LICENSE in the project root for license information
 
 
-using System.Collections.Generic;
 using System.Collections.Specialized;
 
 
-namespace JObservableCollections
+namespace JUtility.JObservableCollections
 {
     /// <summary>
     /// The observable version of <see cref="System.Collections.Generic.SortedDictionary{TKey, TValue}"/>.<para/>

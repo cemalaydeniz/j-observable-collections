@@ -4,7 +4,7 @@
 // Licensed under the MIT. See LICENSE in the project root for license information
 
 
-namespace JObservableCollections.Paginated
+namespace JUtility.JObservableCollections.Paginated
 {
     /// <summary>
     /// The paginated version of <see cref="JObservableCollections.JObservableStack{T}"/>.<para/>

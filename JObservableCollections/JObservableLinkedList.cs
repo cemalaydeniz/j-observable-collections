@@ -4,12 +4,11 @@
 // Licensed under the MIT. See LICENSE in the project root for license information
 
 
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime.Serialization;
 
 
-namespace JObservableCollections
+namespace JUtility.JObservableCollections
 {
     /// <summary>
     /// The observable version of <see cref="System.Collections.Generic.LinkedList{T}"/>.<para/>
@@ -21,7 +20,7 @@ namespace JObservableCollections
     /// <remarks>
     /// This data structure also includes accessing nodes by an index, whose O(n) = n.<para/>
     /// When you need to replace a value inside of a node, use <see cref="Replace(LinkedListNode{T}, T)"/>, whose O(n) is 1, or <see cref="Replace(int, T)"/>, whose O(n) is n, in order to get notified.<para/>
-    /// Use the linked list and the values directly to get notified. Example XAML code:
+    /// Use the linked list and the values of the nodes directly to get notified. Example XAML code:
     /// <code>
     /// &lt;ListView ItemsSource="{Binding MyLinkedList}"&gt;
     ///     &lt;ListView.View&gt;

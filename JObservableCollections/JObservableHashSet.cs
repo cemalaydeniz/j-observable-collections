@@ -4,12 +4,11 @@
 // Licensed under the MIT. See LICENSE in the project root for license information
 
 
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime.Serialization;
 
 
-namespace JObservableCollections
+namespace JUtility.JObservableCollections
 {
     /// <summary>
     /// The observable version of <see cref="System.Collections.Generic.HashSet{T}"/>.<para/>
@@ -18,6 +17,19 @@ namespace JObservableCollections
     /// If the elements implement <see cref="System.ComponentModel.INotifyPropertyChanged"/> then it should raise the <see cref="System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event when a property of the elements changes.
     /// If the elements inherit from <see cref="JObservableCollections.Helper.JObservableItem"/> then it should call the <see cref="JObservableCollections.Helper.JObservableItem.OnPropertyChanged(string?)"/> method when a property of the elements changes.
     /// </summary>
+    /// <remarks>
+    /// Use the hash set and its elements to get notified. Example XAML code:
+    /// <code>
+    /// &lt;ListView ItemsSource="{Binding MyHashSet}"&gt;
+    ///     &lt;ListView.View&gt;
+    ///         &lt;GridView&gt;
+    ///             &lt;GridViewColumn DisplayMemberBinding="{Binding MyProperty1}"/&gt;
+    ///             &lt;GridViewColumn DisplayMemberBinding="{Binding MyProperty2}"/&gt;
+    ///         &lt;/GridView&gt;
+    ///     &lt;/ListView.View&gt;
+    /// &lt;/ListView&gt;
+    /// </code>
+    /// </remarks>
     /// <typeparam name="T">The type of elements in the hash set.</typeparam>
     public class JObservableHashSet<T> : HashSet<T>, INotifyCollectionChanged
     {

@@ -7,11 +7,11 @@
 using System.ComponentModel;
 
 
-namespace JObservableCollections.Helper
+namespace JUtility.JObservableCollections.Helper
 {
     /// <summary>
     /// A helper class to send notification when a property changes.
-    /// Alternatively, <see cref="INotifyPropertyChanged"/> can be used when inheritance is not possible
+    /// Alternatively, <see cref="INotifyPropertyChanged"/> can be used when inheritance is not possible.
     /// </summary>
     public class JObservableItem : INotifyPropertyChanged
     {
@@ -20,7 +20,7 @@ namespace JObservableCollections.Helper
 
 
         /// <summary>
-        /// Raises the <see cref="INotifyPropertyChanged.PropertyChanged"/> event
+        /// Raises the <see cref="INotifyPropertyChanged.PropertyChanged"/> event.
         /// </summary>
         /// <param name="propertyName">The name of the property that changed</param>
         protected void OnPropertyChanged(string? propertyName)
