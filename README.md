@@ -129,7 +129,7 @@ public class MainWindowViewModel
 ...
 ```
 
-## Example code for `JPaginatedList<T>`
+## Example code for `JPaginatedObservableList<T>`
 In this example, we assume, the same `Customer` class is used.
 
 `MainWindowViewModel.cs`: VM of the MainWindow. The `customers.FullList` or `Customers.FullList` property can be used directly to modify the paginated list.
