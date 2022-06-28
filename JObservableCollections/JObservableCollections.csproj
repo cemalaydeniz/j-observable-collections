@@ -6,13 +6,13 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageId>JUtility.JObservableCollections</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Cemal A. Aydeniz</Authors>
     <Description>Observable and paginated observable versions of every generic collection under the System.Collections.Generic namespace.</Description>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/cemalaydeniz/j-observable-collections</RepositoryUrl>
-    <PackageTags>jutility;observable;collection;paginated;pagination;paging;wpf;binding;property</PackageTags>
+    <PackageTags>jutility;observable;collection;paginated;pagination;paging;wpf;binding;property;xaml</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
