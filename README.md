@@ -1,5 +1,5 @@
 # J Observable Collections
-This is a utility class containing observable and paginated observable versions of every generic collection under the `System.Collections.Generic` namespace. Each J Observable Collection gets inheritance from its related generic collection. So that they can be used as if they are normal generic collections.
+This is a utility class containing observable and paginated observable versions of every generic collection under the `System.Collections.Generic` namespace. Each J Observable Collection gets inheritance from its related generic collection. So that they can be used as if they are normal generic collections. The library has been published in [NuGet](https://www.nuget.org/packages/JUtility.JObservableCollections)
 
 # What does it include?
 It includes observable and paginated observable collections:
